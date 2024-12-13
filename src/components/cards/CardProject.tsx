@@ -1,12 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
+import pro1 from "@/app/assets/pro1.png";
 const CardProject = () => {
   return (
     <>
-      <Link href="#" className="group block">
-        <img
-          src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+      <Link href="#" className="group block border-2 ">
+        <Image
+          src={pro1}
           alt=""
-          className="h-[250px] w-full object-cover sm:h-[350px] rounded-lg"
+          className="h-[250px] w-full object-cover sm:h-[350px] rounded-lg shadow-lg opacity-70 hover:opacity-100"
         />
 
         <div className="mt-3 flex justify-between text-sm">
