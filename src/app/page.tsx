@@ -5,7 +5,15 @@ import { MarqueeDemo } from "@/components/marqueeies/Marquee";
 import fongNy from "@/app/assets/fongny.jpg";
 import Image from "next/image";
 import { IconCloudDemo } from "@/components/common/iconCloud/IntersctiveIcon";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Ny Fong",
+    default: "Ny Fong",
+  },
+  description: "The official Next.js Learn Dashboard built with App Router.",
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+};
 export default function Home() {
   let arr: number[];
   arr = [1, 1, 1, 1, 1, 1];
@@ -33,15 +41,11 @@ export default function Home() {
 
         {/* project section */}
         <section className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {arr.map((el, i) => (
-            <>
-              <CardProject key={i} />
-            </>
-          ))}
+          {/* <CardProject /> */}
         </section>
 
         <section className="my-5 grid gap-4 grid-cols-1 md:grid-cols-3">
-          <HeroVideoDialogDemo />
+          {/* <HeroVideoDialogDemo /> */}
         </section>
       </main>
     </>
